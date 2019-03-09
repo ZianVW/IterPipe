@@ -19,7 +19,7 @@ def filter_func(x):
 
 
 def squared(x):
-    # Simple function to
+    # Simple function to square it's input.  Used in "map" below.
     return x * x
 
 input = range(10)
@@ -31,7 +31,7 @@ intermediate_2 = map(squared, intermediate_1)
 
 output = sum(intermediate_2)
 
-print(f"Output without chaining: {output}")
+print("Output without chaining: {output}".format(output=output))
 ```
 
 Here is the same code, using regular Python syntax chaining. Note that execution happens inside-out, with the last operation (sum) appearing first.
@@ -48,7 +48,7 @@ input = range(10)
 
 output = sum(map(squared, filter(filter_func, input)))
 
-print(f"Output with regular Python chaining: {output}")
+print("Output with regular Python chaining: {output}".format(output=output))
 ```
 
 And here is the same code again, using the `IterPipe` wrapper. Note that it reads in the same order as execution happens.
@@ -71,7 +71,7 @@ output = (IterPipe(input)
           .sum()
           )
           
-print(f"Output with IterPipe chaining: {output}")
+print("Output with IterPipe chaining: {output}".format(output=output))
 ``` 
 
 The IterPipe wrapper supports the built-in functions that operate on iterators, as well as the functions in the `itertools` library.
