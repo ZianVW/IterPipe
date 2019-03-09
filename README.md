@@ -77,3 +77,7 @@ print(f"Output with IterPipe chaining: {output}")
 The IterPipe wrapper supports the built-in functions that operate on iterators, as well as the functions in the `itertools` library.
 
 ## Installation
+
+```
+pip install -U IterPipe
+```
