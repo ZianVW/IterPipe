@@ -1,0 +1,15 @@
+language: python
+
+python:
+  - "3.4"
+
+install:
+  - pip install pytest
+
+script:
+  - pytest
+
+# safelist
+branches:
+  only:
+  - master
