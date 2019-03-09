@@ -41,7 +41,7 @@ def filter_func(x):
 
 
 def squared(x):
-    # Simple function to
+    # Simple function to square it's input.  Used in "map" below.
     return x * x
 
 input = range(10)
@@ -60,7 +60,7 @@ def filter_func(x):
 
 
 def squared(x):
-    # Simple function to
+    # Simple function to square it's input.  Used in "map" below.
     return x * x
 
 input = range(10)
