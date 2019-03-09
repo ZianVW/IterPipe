@@ -78,6 +78,8 @@ The IterPipe wrapper supports the built-in functions that operate on iterators, 
 
 ## Installation
 
+Works with Python 3.4 or later.
+
 ```
 pip install -U IterPipe
 ```
