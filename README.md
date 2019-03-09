@@ -74,7 +74,42 @@ output = (IterPipe(input)
 print("Output with IterPipe chaining: {output}".format(output=output))
 ``` 
 
-The IterPipe wrapper supports the built-in functions that operate on iterators, as well as the functions in the `itertools` library.
+The IterPipe wrapper supports the following functions that operate on iterators from `builtins`, `itertools` and `functools`.
+
++ accumulate
++ all
++ any
++ chain
++ combinations
++ combinations_with_replacement
++ compress
++ cycle
++ dict
++ dropwhile
++ enumerate
++ filter
++ filterfalse
++ frozenset
++ groupby
++ islice
++ iterator
++ list
++ map
++ max
++ min
++ next
++ permutations
++ product
++ reduce
++ set
++ sorted
++ starmap
++ sum
++ takewhile
++ tee
++ tuple
++ zip
++ zip_longest
 
 ## Installation
 
