@@ -1,5 +1,6 @@
 from collections.abc import Iterator
 import itertools
+import functools
 import operator
 
 
@@ -295,3 +296,12 @@ class IterPipe(Iterator):
         :return:
         """
         return IterPipe(itertools.zip_longest(self, *iterables, fillvalue=fillvalue))
+
+
+    def reduce(self, function, initializer=None):
+        """
+        Apply a function of two arguments cumulatively to the items of a sequence, from left to right, so as to reduce the sequence to a single value.
+
+        See https://docs.python.org/3/library/functools.html?highlight=reduce#functools.reduce
+        """
+        return functools.reduce(function, self, initializer)

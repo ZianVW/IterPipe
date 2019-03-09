@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="IterPipe",
-    version="0.0.2",
+    version="0.0.3",
     author="Zian van Wijk",
     author_email="zian@cognizon.com",
     description="Iterator pipeline wrapper in the spirit of Martin Fowler's Collection Pipeline pattern",

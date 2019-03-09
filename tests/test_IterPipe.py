@@ -279,4 +279,13 @@ class test_Iterpipe(unittest.TestCase):
                         )
         self.assertEqual(output_1, [(1, 4), (2, 5), (3, 99)])
 
+    def test_reduce(self):
+        input = [1, 2, 3, 4]
 
+        reduce_func = lambda x, y: x + y
+
+        output = (IterPipe(input)
+                  .reduce(reduce_func, 0)
+                  )
+
+        self.assertEqual(output, 10)
