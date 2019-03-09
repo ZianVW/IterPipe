@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="IterPipe-zianvw",
+    name="IterPipe",
     version="0.0.1",
     author="Zian van Wijk",
     author_email="zian@cognizon.com",
