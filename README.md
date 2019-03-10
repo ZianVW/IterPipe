@@ -1,15 +1,20 @@
 # IterPipe
+![Build Status](https://travis-ci.org/ZianVW/IterPipe.svg?branch=master)
+[![codecov](https://codecov.io/gh/ZianVW/IterPipe/branch/master/graph/badge.svg)](https://codecov.io/gh/ZianVW/IterPipe)
+[![PyPi version](https://pypip.in/v/IterPipe/badge.png)](https://crate.io/packages/$REPO/)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92990c1cc30349459a00253ad646e8eb)](https://www.codacy.com/app/Cognizon/IterPipe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ZianVW/IterPipe&amp;utm_campaign=Badge_Grade)
+
 ## Introduction
 This is a wrapper for the iterator functions in the Python Standard Library to make it easier and more readable to chain them together into a pipeline.
 
-It is a way to implement Martin Fowler's _Collection Pipeline_ pattern (https://martinfowler.com/articles/collection-pipeline/) with Python's standard iterator functions.
+It is a way to implement Martin Fowler's _[Collection Pipeline](https://martinfowler.com/articles/collection-pipeline/)_ pattern  with Python's standard iterator functions.
 
 To illustrate the concept, we will perform the following sequence of steps in each example:
 
-1. Start with a `range` iterator,
-2. Then `filter` to pass only the values larger or equal to 6
-3. Then square each number from step 2, using the `map` function
-4. Then `sum` the squares from step 3
+1.  Start with a `range` iterator,
+2.  Then `filter` to pass only the values larger or equal to 6
+3.  Then square each number from step 2, using the `map` function
+4.  Then `sum` the squares from step 3
 
 Here is the code, using intermediate variables, without chaining.
 ```python
@@ -76,45 +81,45 @@ print("Output with IterPipe chaining: {output}".format(output=output))
 
 The IterPipe wrapper supports the following functions that operate on iterators from `builtins`, `itertools` and `functools`.
 
-+ accumulate
-+ all
-+ any
-+ chain
-+ combinations
-+ combinations_with_replacement
-+ compress
-+ cycle
-+ dict
-+ dropwhile
-+ enumerate
-+ filter
-+ filterfalse
-+ frozenset
-+ groupby
-+ islice
-+ iterator
-+ list
-+ map
-+ max
-+ min
-+ next
-+ permutations
-+ product
-+ reduce
-+ set
-+ sorted
-+ starmap
-+ sum
-+ takewhile
-+ tee
-+ tuple
-+ zip
-+ zip_longest
++   accumulate
++   all
++   any
++   chain
++   combinations
++   combinations_with_replacement
++   compress
++   cycle
++   dict
++   dropwhile
++   enumerate
++   filter
++   filterfalse
++   frozenset
++   groupby
++   islice
++   iterator
++   list
++   map
++   max
++   min
++   next
++   permutations
++   product
++   reduce
++   set
++   sorted
++   starmap
++   sum
++   takewhile
++   tee
++   tuple
++   zip
++   zip_longest
 
 ## Installation
 
 Works with Python 3.4 or later.
 
-```
+```bash
 pip install -U IterPipe
 ```
