@@ -37,7 +37,7 @@ class IterPipe(Iterator):
     def any(self):
         """
         See https://docs.python.org/3/library/functions.html#any
-        
+
         :rtype: bool
         """
         return any(self)
