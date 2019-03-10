@@ -1,7 +1,7 @@
 # IterPipe
 ![Build Status](https://travis-ci.org/ZianVW/IterPipe.svg?branch=master)
 [![codecov](https://codecov.io/gh/ZianVW/IterPipe/branch/master/graph/badge.svg)](https://codecov.io/gh/ZianVW/IterPipe)
-[![PyPi version](https://pypip.in/v/IterPipe/badge.png)](https://crate.io/packages/$REPO/)
+[![PyPI version](https://badge.fury.io/py/IterPipe.svg)](https://badge.fury.io/py/IterPipe)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/92990c1cc30349459a00253ad646e8eb)](https://www.codacy.com/app/Cognizon/IterPipe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ZianVW/IterPipe&amp;utm_campaign=Badge_Grade)
 
 ## Introduction
