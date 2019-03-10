@@ -7,7 +7,7 @@
 ## Introduction
 This is a wrapper for the iterator functions in the Python Standard Library to make it easier and more readable to chain them together into a pipeline.
 
-It is a way to implement Martin Fowler's _Collection Pipeline_ pattern ([https://martinfowler.com/articles/collection-pipeline/]) with Python's standard iterator functions.
+It is a way to implement Martin Fowler's _[Collection Pipeline](https://martinfowler.com/articles/collection-pipeline/)_ pattern  with Python's standard iterator functions.
 
 To illustrate the concept, we will perform the following sequence of steps in each example:
 
